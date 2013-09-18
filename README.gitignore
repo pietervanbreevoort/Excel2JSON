@@ -1,0 +1,28 @@
+If you have a data file, for example, CSV, with hierarchical data, you can use this spreadsheet to convert it to JSON.
+The data have to be ordered as indicated in the file: children (for example provinces) have to be below the corresponding parents (for example countries:
+A maximum a child can have a maximum of six parents.
+!Don't forget the zero at the top and the bottom!
+Example:
+
+-Continent A
+-Country 1 in Continent A
+-Region 1 in Country 1 in Continent A
+.
+.
+.
+
+-Region N in Country 1 in Continent A
+-Country 2 in Contrinent A
+-Region 1 in Country 2 in Continent A
+.
+.
+.
+
+-Region N in Country 2 in Continent A
+-Continent B
+.
+.
+.
+-Region N in Country N in Continent N
+
+You can format and indent the resulting JSON text on for example: http://jsonformatter.curiousconcept.com/
